@@ -1,6 +1,6 @@
 const { DataTypes, Sequelize } = require('sequelize');
 
-module.exports = (sequelize) => sequelize.define("tree",{
+module.exports = (sequelize) => sequelize.define("user",{
     pk: {
         allowNull: false,
         autoIncrement: true,
@@ -13,24 +13,24 @@ module.exports = (sequelize) => sequelize.define("tree",{
         type: DataTypes.UUID,
         defaultValue: Sequelize.UUIDV4,
     },
-    type: {
+    usrname: {
         allowNull: false,
         type: DataTypes.STRING
     },
-    plantationDate: {
-        allowNull: true,
-        type: DataTypes.INTEGER,
+    passwd: {
+        allowNull: false,
+        type: DataTypes.STRING,
     },
-    NFCTag: {
+    location: {
         allowNull:true,
         type: DataTypes.STRING,
     },
-    comment: {
+    points: {
         allowNull:true,
-        type: DataTypes.TEXT,
+        type: DataTypes.INTEGER,
     },
-    batchNumber: {
+    type: {
         allowNull:true,
-        type: DataTypes.INTEGER
+        type: DataTypes.STRING
     }
 });
