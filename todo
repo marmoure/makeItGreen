@@ -1,8 +1,8 @@
-[] create sequilize scheme
-[] setup basic express.js project with sequilize
+[x] create sequilize scheme
+[x] setup basic express.js project with sequilize
+[] create website design in figma with mobile 
+[] create the website in react 
 [] create api end point to serve data
 [] create api crud operations end points
-[] create website design in figma with mobile
-[] create the website in react 
 [] connect it all
 [] add location and pics features in mobile
